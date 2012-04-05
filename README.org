@@ -1,6 +1,9 @@
 My Userscripts
-** Userscript. What's A Userscript?
+** UserScript? What's A UserScript?
 If you don't know what userscripts are, you can read about [[http://bit.ly/ypj8z2][Greasemonkey]]. I happen to prefer the [[http://bit.ly/xYcpv7][Scriptish]] add-on over Greasemonkey but the GM wiki page seems to be the best description I have found about userscripts. (If you have a better reference, I'd love a pointer.)
+
+*** My UserScripts Online
+Most of my userscripts can be found on my [[http://userscripts.org/users/66250/scripts][UserScripts.org]] profile page.
 
 ** Timely Google Search
 By default, a Google search returns all results dating to the beginning of time (at least internet time). I find that for over 99% of my searches[1] I either only care about information from the past year or that there are enough new or updated postings in the past year that I don't need to search further back. 
@@ -9,7 +12,7 @@ As a quick example, the Google search for [[http://bit.ly/ynHhv9][George Washing
 
 On the other hand, I am certain that the 370 million results I get when I google [[http://bit.ly/Ag0pP5][Republican Primary]] are not nearly as pertinent to me as the mere 223 million results I get for the [[http://bit.ly/woMAkK][the past year]].
 
-So, I figure, why ever search more than a year? By installing my [[timely-google-search-year.user.js][Timely Google Search Year]] userscript, all your Google searches will default to the past year. If you want to search all of eternity, simply hit the /Any time/ link on the left side of the Google results and you'll have your unrestricted search.
+So, I figure, why ever search more than a year? By installing my [[https://raw.github.com/Neil-Smithline/UserScripts/master/timely-google-search-year.user.js][Timely Google Search Year]] userscript, all your Google searches will default to the past year. If you want to search all of eternity, simply hit the /Any time/ link on the left side of the Google results and you'll have your unrestricted search.
 
 ** Footnotes
 [1] Yes. I've checks Google's history of my searches to know that 99% is an accurate number.
