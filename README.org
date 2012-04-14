@@ -6,8 +6,6 @@ If you don't know what userscripts are, you can read about [[http://bit.ly/ypj8z
 Many of my userscripts can be found on my UserScripts.org [[http://userscripts.org/users/66250/scripts][profile page]].
 
 ** Timely Google Search
-- [[https://github.com/Neil-Smithline/UserScripts/blob/master/timely-google-search-year.user.js][Source Code]]
-- [[https://raw.github.com/Neil-Smithline/UserScripts/master/timely-google-search-year.user.js][Installable Script]]
 By default, a Google search returns all results dating to the beginning of time (at least internet time). I find that for over 99% of my searches[1] I either only care about information from the past year or that there are enough new or updated postings in the past year that I don't need to search further back. 
 
 As a quick example, as of the time of writing this (13 April 2012), a Google search for /Google map help/ returns 836 million hits for the [[http://bit.ly/J9lf6J][past year]] compared to 1.2 billion hits for [[https://www.google.com/search?q=google%20search%20help&ie=utf-8&oe=utf-8][all time]]. 
@@ -15,10 +13,10 @@ As a quick example, as of the time of writing this (13 April 2012), a Google sea
 While the nearly one third reduction in total search hits likely doesn't matter much to me as I probably will never look at most of them, limiting the search to the past year eliminates links to old articles such as [[http://bit.ly/HS4Z9Q][this one]]. That 2006 blog article is the 11^th hit on my /all time/ search, [[http://en.wiktionary.org/wiki/YMMV][YMMV]][2]. Personally, I am infuriated when I find that I have wasted my time reading some long-outdated article. 
 
 The [[https://raw.github.com/Neil-Smithline/UserScripts/master/timely-google-search-year.user.js][Timely Google Search Year]] userscript defaults all Google searches the past year. If you want to search all of eternity, you can simply hit the /Any time/ link on the left side of the Google results and you'll have your unrestricted search. 
+- [[https://github.com/Neil-Smithline/UserScripts/blob/master/timely-google-search-year.user.js][Source Code]]
+- [[https://raw.github.com/Neil-Smithline/UserScripts/master/timely-google-search-year.user.js][Installable Script]]
 
 ** AMO: Up Top Version Info
-- [[https://github.com/Neil-Smithline/UserScripts/blob/master/amo-up-top-version-info.user.js][Source Code]]
-- [[https://raw.github.com/Neil-Smithline/UserScripts/master/amo-up-top-version-info.user.js][Installable Script]]
 [[http://bit.ly/HJCDRj][AMO]] is the site that provides discovery, download, and installation of add-ons for [[http://bit.ly/IGtTL8][Firefox]] and other [[http://bit.ly/HJCSM7][Mozilla]] [[http://bit.ly/HJD0Lt][applications]]. When searching on AMO, it cleverly restricts add-ons to those that match the version of Firefox that you are using. 
 
 But since Mozilla changed their [[http://bit.ly/IGtqso][release schedule]] to release a new version every 6-weeks, add-ons have had a hard time staying current. So every 6-weeks, every add-on becomes outdated and must go through Mozilla's AMO update process to be considered safe to work with the newest version of Firefox. Mozilla's cautious approach to declaring add-ons compatible with new releases helps to ensure that Firefox is a stable application.
@@ -36,6 +34,8 @@ The /AMO: Up Top Version Info/ userscript copies the most relevant parts of the 
 The script tries to style the /up top/ version information to flow naturally with the existing page. It puts the version information in a box that can be themed for different colors (for now you must edit the script to change themes - sorry). 
 
 The box is also dynamically sized so that it can handle /Install/ buttons of different width. For example, at the time of writing this (13 April 2012), the [[http://bit.ly/HHEBCi][My Homepage]] add-on has a wider /Continue to Download/ button in place of an /Install/ button. The dynamic sizing also allows for buttons of different widths that will occur in non-English pages.
+- [[https://github.com/Neil-Smithline/UserScripts/blob/master/amo-up-top-version-info.user.js][Source Code]]
+- [[https://raw.github.com/Neil-Smithline/UserScripts/master/amo-up-top-version-info.user.js][Installable Script]]
 
 # LocalWords:  Userscripts
 

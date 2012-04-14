@@ -1,25 +1,14 @@
 // ==UserScript==
-// @id             www.neilsmithline.com-40efcea0-d49a-564f-a845-37fc2faa7ee02@scriptish
+// @id             www.neilsmithline.com-amo-up-top-version-info@scriptish
 // @name           AMO: Up Top Version Info
 // @version        0.0.0.1
 // @namespace      com.neilsmithline
 // @author         Neil Smithline
 // @description    Show version information at the top of AMO add-on pages.
-// @include        https://addons.mozilla.org/en-US/*/addon/*
+// @include        https?://addons.mozilla.org/[^/]+/[^/+]/addon/[^/]+/?
 // @exclude
 // @run-at         document-idle
 // ==/UserScript==
-
-// There are several scenarios in which the startup() function may be called; for example:
-    // When the extension is first installed, assuming that it's both compatible with the application and is enabled.
-    // When the extension becomes enabled using the add-ons manager window.
-    // When the application is started up, if the extension is enabled and compatible with the application.
-
-// Some examples of when the shutdown() function may be called:
-//     When the extension is uninstalled, if it's currently enabled.
-//     When the extension becomes disabled.
-//     When the user quits the application, if the extension is enabled.
-
 
 // The "theme" constructor.
 function theme(printName, borderColor, backgroundColor) {
