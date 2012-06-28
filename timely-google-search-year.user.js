@@ -9,7 +9,7 @@
 // @updateURL      https://raw.github.com/Neil-Smithline/UserScripts/master/timely-google-search-year.user.js 
 // @supportURL     https://github.com/Neil-Smithline/UserScripts/issues
 // @domain         www.google.com 
-// @include        https?://www.google.com/*q=*
+// @include        https?://www.google.com/search/*q=*
 // @exclude        *&tbs=qdr*
 // @run-at         document-start
 // ==/UserScript==
