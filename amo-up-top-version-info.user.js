@@ -5,7 +5,7 @@
 // @namespace      com.neilsmithline
 // @author         Neil Smithline
 // @description    Show version information at the top of AMO add-on pages.
-// @include        https?://addons.mozilla.org/[^/]+/[^/+]/addon/[^/]+/?
+// @include        http*://addons.mozilla.org/*/*/addon/*/*
 // @exclude
 // @run-at         document-idle
 // ==/UserScript==
