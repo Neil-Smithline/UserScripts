@@ -15,8 +15,8 @@ Browser extensions are also known to cause [[http://bit.ly/NUqmxs][memory leaks]
 Some browsers (eg: [[Chrome]) run UserScripts directly. Other browsers require extensions to utilize UserScripts. For example, Firefox requires [[http://bit.ly/NUvoKf][Scriptish]], [[http://bit.ly/Kk9A6R][GreaseMonkey]], or a similar extension. These extensions tend to be large. I would say that, for browsers that require an extension to run a UserScript, it only makes sense to use this UserScript if you already have an extension to run UserScripts installed in your browser.
 
 As mentioned previously, Google's opt-out mechanism is only [[http://bit.ly/NuGbdG][semi-effective]] and can be beaten by individual web pages. This UserScript is no better than Google's semi-effective opt-out extension.
-- [[Source Code]
-- [[Installable Script]
+- [[http://bit.ly/NUyeyQ][Source Code]]
+- [[http://bit.ly/NUzQIS][Installable Script]]
 
 * Timely Google Search
 By default, a Google search returns all results dating to the beginning of time (at least internet time). I find that for over 99% of my searches[1] I either only care about information from the past year or that there are enough new or updated postings in the past year that I don't need to search further back. 
