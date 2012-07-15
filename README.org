@@ -1,11 +1,24 @@
-* My UserScripts
-** UserScript? What's A UserScript?
+* UserScript? What's A UserScript?
 If you don't know what userscripts are, you can read about [[http://bit.ly/ypj8z2][Greasemonkey]]. I happen to prefer the [[http://bit.ly/xYcpv7][Scriptish]] add-on over Greasemonkey but the GM wiki page seems to be the best description I have found about userscripts. (If you have a better reference, I'd love a pointer.)
 
-*** My UserScripts Online
+** My UserScripts Online
 Many of my userscripts can be found on my UserScripts.org [[http://userscripts.org/users/66250/scripts][profile page]].
 
-** Timely Google Search
+* Google Opt-Out
+[[http://bit.ly/r1GLJZ][Google]] is (in)famous for its [[http://bit.ly/NuG7KT][web tracking]] via its [[http://bit.ly/NuG69H][Google Adwords]] online advertising network, as well as tracking users on their site, and other means. Google provides a [[http://bit.ly/NuGbdG][semi-effective]] [[http://bit.ly/KJ7Inj][opt-out]] mechanism. Google's [[http://bit.ly/NuGBkh][opt-out page]] recommends installing a [[http://bit.ly/NuGBkh][browser extension]]. It provides versions of this add-on for most popular browser. The browser extension for [[http://bit.ly/HzqbTy][Firefox]] is 73K bytes.[5]
+
+While 73K bytes is not a ridiculous amount of memory, apparently only a single line of [[JavaScript] is required:
+: _ga_user_prefs = false;
+
+Browser extensions are also known to cause [[http://bit.ly/NUqmxs][memory leaks]].[3][4] This UserScript implements the Google opt-out mechanism in under 700 bytes; most of which is required UserScript [[http://bit.ly/NUrXDd][metadata]]. That's less than 10% of the Firefox add-on.
+
+Some browsers (eg: [[Chrome]) run UserScripts directly. Other browsers require extensions to utilize UserScripts. For example, Firefox requires [[http://bit.ly/NUvoKf][Scriptish]], [[http://bit.ly/Kk9A6R][GreaseMonkey]], or a similar extension. These extensions tend to be large. I would say that, for browsers that require an extension to run a UserScript, it only makes sense to use this UserScript if you already have an extension to run UserScripts installed in your browser.
+
+As mentioned previously, Google's opt-out mechanism is only [[http://bit.ly/NuGbdG][semi-effective]] and can be beaten by individual web pages. This UserScript is no better than Google's semi-effective opt-out extension.
+- [[Source Code]
+- [[Installable Script]
+
+* Timely Google Search
 By default, a Google search returns all results dating to the beginning of time (at least internet time). I find that for over 99% of my searches[1] I either only care about information from the past year or that there are enough new or updated postings in the past year that I don't need to search further back. 
 
 As a quick example, as of the time of writing this (13 April 2012), a Google search for /Google map help/ returns 836 million hits for the [[http://bit.ly/J9lf6J][past year]] compared to 1.2 billion hits for [[https://www.google.com/search?q=google%20search%20help&ie=utf-8&oe=utf-8][all time]]. 
@@ -16,7 +29,7 @@ The [[https://raw.github.com/Neil-Smithline/UserScripts/master/timely-google-sea
 - [[https://github.com/Neil-Smithline/UserScripts/blob/master/timely-google-search-year.user.js][Source Code]]
 - [[https://raw.github.com/Neil-Smithline/UserScripts/master/timely-google-search-year.user.js][Installable Script]]
 
-** AMO: Up Top Version Info
+* AMO: Up Top Version Info
 [[http://bit.ly/HJCDRj][AMO]] is the site that provides discovery, download, and installation of add-ons for [[http://bit.ly/IGtTL8][Firefox]] and other [[http://bit.ly/HJCSM7][Mozilla]] [[http://bit.ly/HJD0Lt][applications]]. When searching on AMO, it cleverly restricts add-ons to those that match the version of Firefox that you are using. 
 
 But since Mozilla changed their [[http://bit.ly/IGtqso][release schedule]] to release a new version every 6-weeks, add-ons have had a hard time staying current. So every 6-weeks, every add-on becomes outdated and must go through Mozilla's AMO update process to be considered safe to work with the newest version of Firefox. Mozilla's cautious approach to declaring add-ons compatible with new releases helps to ensure that Firefox is a stable application.
@@ -39,8 +52,16 @@ The box is also dynamically sized so that it can handle /Install/ buttons of dif
 
 # LocalWords:  Userscripts
 
-** Footnotes
+* Footnotes
+
+[5] I only state the size of the Firefox extension because its size is easily accessible (it states its size on installation). I have not taken the effort to determine the size of the extensions for other browsers.
+
+[3] Mozilla's [[http://mzl.la/NUpwkh][memory leak prevention page]].
+
+[4] Generic JavaScript pgae on [[http://bit.ly/NUpUPz][preventing memory leaks]].
 
 [1] Yes. I've checked Google's history of my searches to know that 99% is an accurate number.
 
-[2] Google has optimized their search engine for speed over accurate results. This optimization can lead to getting slightly different results on the same search.
+[2] Google has optimized their search engine for speed over accuraty. This optimization can lead to getting slightly different results on the same search.
+
+
